@@ -1,3 +1,8 @@
+
+![alt text](https://i.imgur.com/KO9LLDi.gif "Logo Title Text 1")
+
+
+
 # LottieWebDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
