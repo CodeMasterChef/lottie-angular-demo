@@ -3,14 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
+import { LottieAnimationViewModule } from 'ng-lottie';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    LottieAnimationViewModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

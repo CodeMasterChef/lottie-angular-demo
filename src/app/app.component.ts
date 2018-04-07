@@ -6,5 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  public lottieConfig: Object;
+  private anim: any;
+  private animationSpeed: number = 1;
+
+  constructor() {
+      this.lottieConfig = {
+          path: 'assets/firework.json',
+          autoplay: true,
+          loop: true
+      };
+  }
+
+  handleAnimation(anim: any) {
+      this.anim = anim;
+  }
+
+  stop() {
+      this.anim.stop();
+  }
+
+  play() {
+      this.anim.play();
+  }
+
+  pause() {
+      this.anim.pause();
+  }
+
+  setSpeed(speed: number) {
+      this.animationSpeed = speed;
+      this.anim.setSpeed(speed);
+  }
 }
